@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand palette in HSL for Tailwind variable utilities */
+    --background: 210 48% 11%;
+    --foreground: 210 40% 98%;
+    --card: 210 36% 17%;
+    --card-foreground: 210 40% 98%;
+    --popover: 210 36% 17%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 173 66% 61%;
+    --primary-foreground: 210 50% 10%;
+    --secondary: 210 36% 21%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 215 17% 65%;
+    --muted-foreground: 215 15% 80%;
+    --accent: 283 43% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 26% 25%;
+    --input: 210 26% 25%;
+    --ring: 173 66% 61%;
+    --radius: 0.75rem;
+    --purple-glow: 283 43% 40%;
+  }
+
+  * {
+    @apply border-border;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'IBM Plex Sans Arabic', 'Inter', sans-serif;
+  }
+
+  /* Prevent heading descenders from being clipped */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.15 !important;
+    margin-bottom: 0.30em !important;
+    margin-top: 0.25em !important;
+  }
+
+  /* Arabic Typography */
+  [dir="rtl"] {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+  }
+
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3 {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 700;
+  }
+
+  /* English Typography - Premium Fonts */
+  [dir="ltr"] {
+    font-family: 'Inter', 'Poppins', sans-serif;
+  }
+
+  [dir="ltr"] h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  [dir="ltr"] h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  [dir="ltr"] h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+
+  [dir="ltr"] p,
+  [dir="ltr"] button,
+  [dir="ltr"] a {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  33% {
+    transform: translateY(-15px) translateX(5px);
+  }
+  66% {
+    transform: translateY(-8px) translateX(-5px);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+    filter: blur(8px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.3);
+    filter: blur(12px);
+  }
+}
+
+@keyframes astronaut-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+  75% {
+    transform: translateY(-25px) rotate(3deg);
+  }
+}
+
+@keyframes comet-trail {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(0);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100px) translateY(100px);
+  }
+}
+
+@keyframes rotate-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-pulse {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.astronaut-float {
+  animation: astronaut-float 8s ease-in-out infinite;
+}
+
+.comet-trail {
+  animation: comet-trail 4s ease-in-out infinite;
+}
+
+.glow-pulse {
+  animation: glow-pulse 4s ease-in-out infinite;
+}
+
+.rotate-slow {
+  animation: rotate-slow 30s linear infinite;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+.delay-700 {
+  animation-delay: 700ms;
+}
+
+.delay-1000 {
+  animation-delay: 1000ms;
+}
+
+.delay-1200 {
+  animation-delay: 1200ms;
+}
+
+.delay-1500 {
+  animation-delay: 1500ms;
+}
+
+.delay-2000 {
+  animation-delay: 2000ms;
+}
+
+/* Gradient utilities */
+.bg-gradient-radial {
+  background-image: radial-gradient(circle, var(--tw-gradient-stops));
+}
