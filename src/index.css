@@ -48,6 +48,10 @@
     margin-top: 0.25em !important;
   }
 
+  h1 span, h2 span {
+    padding-top: 20px !important;
+
+  }
   /* Arabic Typography */
   [dir="rtl"] {
     font-family: 'IBM Plex Sans Arabic', sans-serif;
