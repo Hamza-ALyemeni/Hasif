@@ -42,19 +42,19 @@ function AppContent() {
         
         {/* Arabic Routes */}
         <Route path="/ar" element={<HomePageAR />} />
-        <Route path="#" element={<AboutPageAR />} />
-        <Route path="#" element={<div dir="rtl"><ServicesPage /></div>} />
-        <Route path="#" element={<div dir="rtl"><PortfolioPage /></div>} />
-        <Route path="#" element={<div dir="rtl"><ClientsPage /></div>} />
-        <Route path="#" element={<div dir="rtl"><ContactPage /></div>} />
+        <Route path="/ar/about" element={<AboutPageAR />} />
+        <Route path="/ar/services" element={<div dir="rtl"><ServicesPage /></div>} />
+        <Route path="/ar/portfolio" element={<div dir="rtl"><PortfolioPage /></div>} />
+        <Route path="/ar/clients" element={<div dir="rtl"><ClientsPage /></div>} />
+        <Route path="/ar/contact" element={<div dir="rtl"><ContactPage /></div>} />
         
         {/* English Routes */}
         <Route path="/en" element={<HomePageEN />} />
-        <Route path="#" element={<AboutPageEN />} />
-        <Route path="#" element={<div dir="ltr"><ServicesPage /></div>} />
-        <Route path="#" element={<div dir="ltr"><PortfolioPage /></div>} />
-        <Route path="#" element={<div dir="ltr"><ClientsPage /></div>} />
-        <Route path="#" element={<div dir="ltr"><ContactPage /></div>} />
+        <Route path="/en/about" element={<AboutPageEN />} />
+        <Route path="/en/services" element={<div dir="ltr"><ServicesPage /></div>} />
+        <Route path="/en/portfolio" element={<div dir="ltr"><PortfolioPage /></div>} />
+        <Route path="/en/clients" element={<div dir="ltr"><ClientsPage /></div>} />
+        <Route path="/en/contact" element={<div dir="ltr"><ContactPage /></div>} />
         
         {/* Catch all - redirect to Arabic home */}
         <Route path="*" element={<Navigate to="/ar" replace />} />
