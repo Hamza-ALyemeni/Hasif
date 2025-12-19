@@ -10,8 +10,12 @@ import { AboutPageAR } from './pages/ar/AboutPageAR';
 // English Pages
 import { HomePageEN } from './pages/en/HomePageEN';
 import { AboutPageEN } from './pages/en/AboutPageEN';
+import { ServicesPageEN } from './pages/en/ServicesPageEN';
+import { PortfolioPageEN } from './pages/en/PortfolioPageEN';
+import { ClientsPageEN } from './pages/en/ClientsPageEN';
+import { ContactPageEN } from './pages/en/ContactPageEN';
 
-// Existing pages (will be used for both languages temporarily)
+// Arabic Pages (existing)
 import { ServicesPage } from './pages/ServicesPage';
 import { PortfolioPage } from './pages/PortfolioPage';
 import { ClientsPage } from './pages/ClientsPage';
@@ -51,10 +55,10 @@ function AppContent() {
         {/* English Routes */}
         <Route path="/en" element={<HomePageEN />} />
         <Route path="/en/about" element={<AboutPageEN />} />
-        <Route path="/en/services" element={<div dir="ltr"><ServicesPage /></div>} />
-        <Route path="/en/portfolio" element={<div dir="ltr"><PortfolioPage /></div>} />
-        <Route path="/en/clients" element={<div dir="ltr"><ClientsPage /></div>} />
-        <Route path="/en/contact" element={<div dir="ltr"><ContactPage /></div>} />
+        <Route path="/en/services" element={<ServicesPageEN />} />
+        <Route path="/en/portfolio" element={<PortfolioPageEN />} />
+        <Route path="/en/clients" element={<ClientsPageEN />} />
+        <Route path="/en/contact" element={<ContactPageEN />} />
         
         {/* Catch all - redirect to Arabic home */}
         <Route path="*" element={<Navigate to="/ar" replace />} />
