@@ -23,7 +23,7 @@ export function FooterBilingual({ language }: FooterBilingualProps) {
         companyTitle: 'الشركة',
         company: ['من نحن', 'أعمالنا', 'عملاؤنا', 'المدونة', 'الوظائف'],
         supportTitle: 'الدعم',
-        support: ['مركز المساعدة', 'الأسئلة الشائعة', 'سياسة الخصوصية', 'الشروط والأحكام', 'اتصل بنا'],
+        support: ['الأسئلة الشائعة', 'سياسة الخصوصية', 'اتصل بنا'],
         copyright: '© 2024 حصيف. جميع الحقوق محفوظة',
         privacy: 'سياسة الخصوصية',
         terms: 'الشروط والأحكام',
@@ -41,7 +41,7 @@ export function FooterBilingual({ language }: FooterBilingualProps) {
         companyTitle: 'Company',
         company: ['About Us', 'Portfolio', 'Clients', 'Blog', 'Careers'],
         supportTitle: 'Support',
-        support: ['Help Center', 'FAQ', 'Privacy Policy', 'Terms & Conditions', 'Contact Us'],
+        support: ['FAQ', 'Privacy Policy', 'Contact Us'],
         copyright: '© 2024 Haseef. All rights reserved',
         privacy: 'Privacy Policy',
         terms: 'Terms & Conditions',
@@ -140,9 +140,6 @@ export function FooterBilingual({ language }: FooterBilingualProps) {
           <div className="flex items-center gap-6">
             <Link to="#" className="text-white/40 hover:text-[#5DDCD1] text-sm transition-colors duration-300">
               {footerContent.privacy}
-            </Link>
-            <Link to="#" className="text-white/40 hover:text-[#5DDCD1] text-sm transition-colors duration-300">
-              {footerContent.terms}
             </Link>
           </div>
         </div>
