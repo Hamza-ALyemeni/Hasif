@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { ArrowUpLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { CosmicBackground } from '../../components/shared/CosmicBackground';
 import { Shape3D } from '../../components/shared/Shape3D';
 
