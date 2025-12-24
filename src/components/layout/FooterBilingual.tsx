@@ -12,39 +12,55 @@ export function FooterBilingual({ language }: FooterBilingualProps) {
   const footerContent = isArabic
     ? {
         description: 'وكالة تسويق رقمي متكاملة تصنع تجارب استثنائية للعلامات التجارية',
-        servicesTitle: 'خدماتنا',
+        servicesTitle: 'الخدمات',
         services: [
-          'التسويق الرقمي',
-          'تصميم الهوية البصرية',
-          'إدارة السوشيال ميديا',
-          'الحملات الإعلانية',
-          'إنتاج المحتوى',
+          { label: 'التسويق الرقمي المتكامل', path: `${prefix}/services` },
+          { label: 'تصميم الهوية البصرية', path: `${prefix}/services` },
+          { label: 'إدارة وسائل التواصل الاجتماعي', path: `${prefix}/services` },
+          { label: 'الحملات الإعلانية', path: `${prefix}/services` },
+          { label: 'إنتاج المحتوى', path: `${prefix}/services` },
         ],
         companyTitle: 'الشركة',
-        company: ['من نحن', 'أعمالنا', 'عملاؤنا'],
+        company: [
+          { label: 'من نحن', path: `${prefix}/about` },
+          { label: 'أعمالنا', path: `${prefix}/portfolio` },
+          { label: 'عملاؤنا', path: `${prefix}/clients` },
+        ],
         supportTitle: 'الدعم',
-        support: ['الأسئلة الشائعة', 'سياسة الخصوصية', 'اتصل بنا'],
-        copyright: '© 2024 حصيف. جميع الحقوق محفوظة',
+        support: [
+          { label: 'الأسئلة الشائعة', path: `${prefix}/faq` },
+          { label: 'سياسة الخصوصية', path: `${prefix}/privacy` },
+          { label: 'تواصل معنا', path: `${prefix}/contact` },
+        ],
+        copyright: '© 2026 حسيف. جميع الحقوق محفوظة.',
         privacy: 'سياسة الخصوصية',
-        terms: 'الشروط والأحكام',
+        privacyLink: `${prefix}/privacy`,
       }
     : {
         description: 'An integrated digital marketing agency creating exceptional experiences for brands',
         servicesTitle: 'Services',
         services: [
-          'Digital Marketing',
-          'Brand Identity Design',
-          'Social Media Management',
-          'Ad Campaigns',
-          'Content Production',
+          { label: 'Digital Marketing', path: `${prefix}/services` },
+          { label: 'Brand Identity Design', path: `${prefix}/services` },
+          { label: 'Social Media Management', path: `${prefix}/services` },
+          { label: 'Ad Campaigns', path: `${prefix}/services` },
+          { label: 'Content Production', path: `${prefix}/services` },
         ],
         companyTitle: 'Company',
-        company: ['About Us', 'Portfolio', 'Clients'],
+        company: [
+          { label: 'About Us', path: `${prefix}/about` },
+          { label: 'Portfolio', path: `${prefix}/portfolio` },
+          { label: 'Clients', path: `${prefix}/clients` },
+        ],
         supportTitle: 'Support',
-        support: ['FAQ', 'Privacy Policy', 'Contact Us'],
-        copyright: '© 2024 Haseef. All rights reserved',
+        support: [
+          { label: 'FAQ', path: `${prefix}/faq` },
+          { label: 'Privacy Policy', path: `${prefix}/privacy` },
+          { label: 'Contact Us', path: `${prefix}/contact` },
+        ],
+        copyright: '© 2026 Haseef. All rights reserved.',
         privacy: 'Privacy Policy',
-        terms: 'Terms & Conditions',
+        privacyLink: `${prefix}/privacy`,
       };
 
   const socialLinks = [
@@ -87,10 +103,10 @@ export function FooterBilingual({ language }: FooterBilingualProps) {
               {footerContent.services.map((item, index) => (
                 <li key={index}>
                   <Link
-                    to={`${prefix}/services`}
+                    to={item.path}
                     className="text-white/60 hover:text-[#5DDCD1] transition-colors duration-300"
                   >
-                    {item}
+                    {item.label}
                   </Link>
                 </li>
               ))}
@@ -104,10 +120,10 @@ export function FooterBilingual({ language }: FooterBilingualProps) {
               {footerContent.company.map((item, index) => (
                 <li key={index}>
                   <Link
-                    to={`${prefix}/about`}
+                    to={item.path}
                     className="text-white/60 hover:text-[#5DDCD1] transition-colors duration-300"
                   >
-                    {item}
+                    {item.label}
                   </Link>
                 </li>
               ))}
@@ -121,10 +137,10 @@ export function FooterBilingual({ language }: FooterBilingualProps) {
               {footerContent.support.map((item, index) => (
                 <li key={index}>
                   <Link
-                    to={`${prefix}/contact`}
+                    to={item.path}
                     className="text-white/60 hover:text-[#5DDCD1] transition-colors duration-300"
                   >
-                    {item}
+                    {item.label}
                   </Link>
                 </li>
               ))}
@@ -134,11 +150,9 @@ export function FooterBilingual({ language }: FooterBilingualProps) {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white/40 text-sm">
-            {isArabic ? '© 2026 حصيف. جميع الحقوق محفوظة.' : '© 2026 Haseif. All rights reserved.'}
-          </p>
+          <p className="text-white/40 text-sm">{footerContent.copyright}</p>
           <div className="flex items-center gap-6">
-            <Link to="#" className="text-white/40 hover:text-[#5DDCD1] text-sm transition-colors duration-300">
+            <Link to={footerContent.privacyLink} className="text-white/40 hover:text-[#5DDCD1] text-sm transition-colors duration-300">
               {footerContent.privacy}
             </Link>
           </div>
