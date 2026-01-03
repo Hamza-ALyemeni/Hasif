@@ -1,47 +1,45 @@
 import { PageHero } from '../components/shared/PageHero';
-import { Quote } from 'lucide-react';
-
 export function ClientsPage() {
   const clients = Array.from({ length: 20 }, (_, i) => i + 1);
 
-  const testimonials = [
-    {
-      name: 'أحمد المالكي',
-      position: 'مدير تنفيذي',
-      company: 'شركة النجاح',
-      text: 'تعاملنا مع حصيف كان استثنائياً. نجحوا في تحويل رؤيتنا إلى واقع رقمي ملموس وحققنا نتائج تفوق التوقعات. فريق محترف وملتزم بالجودة.'
-    },
-    {
-      name: 'فاطمة العتيبي',
-      position: 'مديرة التسويق',
-      company: 'مؤسسة الابتكار',
-      text: 'حصيف ليسوا مجرد وكالة تسويق، بل شركاء نجاح حقيقيون. ساعدونا في بناء حضور رقمي قوي وزيادة مبيعاتنا بنسبة 200% خلال 6 أشهر.'
-    },
-    {
-      name: 'محمد الغامدي',
-      position: 'صاحب متجر إلكتروني',
-      company: 'متجر الرقي',
-      text: 'الإبداع والاحترافية هما ما يميزان فريق حصيف. من التصميم إلى الحملات التسويقية، كل شيء كان في أعلى مستوى من الجودة والإتقان.'
-    },
-    {
-      name: 'نورة السعيد',
-      position: 'مؤسسة علامة تجارية',
-      company: 'علامة نورة',
-      text: 'بفضل حصيف، تمكنا من الوصول إلى جمهور أوسع وبناء قاعدة عملاء مخلصين. استراتيجياتهم التسويقية فعالة ومبنية على بيانات دقيقة.'
-    },
-    {
-      name: 'خالد الشمري',
-      position: 'مدير عام',
-      company: 'مجموعة الريادة',
-      text: 'العمل مع حصيف كان تجربة ممتعة ومثمرة. فهمهم العميق للسوق السعودي ساعدنا في تحقيق أهدافنا التسويقية بكفاءة عالية.'
-    },
-    {
-      name: 'سارة القحطاني',
-      position: 'مالكة مشروع',
-      company: 'بوتيك سارة',
-      text: 'أنصح بشدة بالتعامل مع حصيف. فريقهم ملتزم ومبدع ويقدم حلولاً مبتكرة تناسب ميزانيتك وأهدافك. شكراً لكم على دعمكم المستمر.'
-    }
-  ];
+  // const testimonials = [
+  //   {
+  //     name: 'أحمد المالكي',
+  //     position: 'مدير تنفيذي',
+  //     company: 'شركة النجاح',
+  //     text: 'تعاملنا مع حصيف كان استثنائياً. نجحوا في تحويل رؤيتنا إلى واقع رقمي ملموس وحققنا نتائج تفوق التوقعات. فريق محترف وملتزم بالجودة.'
+  //   },
+  //   {
+  //     name: 'فاطمة العتيبي',
+  //     position: 'مديرة التسويق',
+  //     company: 'مؤسسة الابتكار',
+  //     text: 'حصيف ليسوا مجرد وكالة تسويق، بل شركاء نجاح حقيقيون. ساعدونا في بناء حضور رقمي قوي وزيادة مبيعاتنا بنسبة 200% خلال 6 أشهر.'
+  //   },
+  //   {
+  //     name: 'محمد الغامدي',
+  //     position: 'صاحب متجر إلكتروني',
+  //     company: 'متجر الرقي',
+  //     text: 'الإبداع والاحترافية هما ما يميزان فريق حصيف. من التصميم إلى الحملات التسويقية، كل شيء كان في أعلى مستوى من الجودة والإتقان.'
+  //   },
+  //   {
+  //     name: 'نورة السعيد',
+  //     position: 'مؤسسة علامة تجارية',
+  //     company: 'علامة نورة',
+  //     text: 'بفضل حصيف، تمكنا من الوصول إلى جمهور أوسع وبناء قاعدة عملاء مخلصين. استراتيجياتهم التسويقية فعالة ومبنية على بيانات دقيقة.'
+  //   },
+  //   {
+  //     name: 'خالد الشمري',
+  //     position: 'مدير عام',
+  //     company: 'مجموعة الريادة',
+  //     text: 'العمل مع حصيف كان تجربة ممتعة ومثمرة. فهمهم العميق للسوق السعودي ساعدنا في تحقيق أهدافنا التسويقية بكفاءة عالية.'
+  //   },
+  //   {
+  //     name: 'سارة القحطاني',
+  //     position: 'مالكة مشروع',
+  //     company: 'بوتيك سارة',
+  //     text: 'أنصح بشدة بالتعامل مع حصيف. فريقهم ملتزم ومبدع ويقدم حلولاً مبتكرة تناسب ميزانيتك وأهدافك. شكراً لكم على دعمكم المستمر.'
+  //   }
+  // ];
 
   return (
     <div className="min-h-screen">
@@ -52,7 +50,7 @@ export function ClientsPage() {
       />
 
       {/* Counter Section */}
-      <section className="py-24 px-6 lg:px-12 bg-[#0A1419]">
+      <section className="hidden">
         <div className="max-w-5xl mx-auto text-center">
           <div className="relative">
             {/* Background Glow */}
@@ -114,48 +112,7 @@ export function ClientsPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-24 px-6 lg:px-12 bg-[#0A1419]">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl mb-4 bg-gradient-to-b from-white to-white/80 bg-clip-text text-transparent">
-              ماذا يقول عملاؤنا
-            </h2>
-            <p className="text-lg text-white/60">
-              آراء وتجارب حقيقية من عملائنا
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="group relative p-8 bg-gradient-to-br from-[#1A2B3A]/50 to-[#0F1D2A]/50 rounded-2xl border border-white/10 hover:border-[#5DDCD1]/40 transition-all duration-300"
-              >
-                {/* Quote Icon */}
-                <div className="w-12 h-12 mb-6 rounded-lg bg-gradient-to-br from-[#5DDCD1]/20 to-[#733A93]/20 flex items-center justify-center">
-                  <Quote className="w-6 h-6 text-[#5DDCD1]" />
-                </div>
-
-                {/* Testimonial Text */}
-                <p className="text-white/80 leading-relaxed mb-6">
-                  "{testimonial.text}"
-                </p>
-
-                {/* Author Info */}
-                <div className="pt-6 border-t border-white/10">
-                  <div className="text-white mb-1">{testimonial.name}</div>
-                  <div className="text-sm text-white/60">{testimonial.position}</div>
-                  <div className="text-sm text-[#5DDCD1]">{testimonial.company}</div>
-                </div>
-
-                {/* Glow Effect */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#5DDCD1]/0 to-[#733A93]/0 group-hover:from-[#5DDCD1]/5 group-hover:to-[#733A93]/5 transition-all duration-300 pointer-events-none"></div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* CTA Section */}
       <section className="py-24 px-6 lg:px-12">

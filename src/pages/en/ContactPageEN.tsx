@@ -27,14 +27,14 @@ export function ContactPageEN() {
     {
       icon: Mail,
       title: 'Email',
-      value: 'info@haseef.sa',
-      href: 'mailto:info@haseef.sa'
+      value: 'info@haseif.co',
+      href: 'mailto:info@haseif.co'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+966 50 123 4567',
-      href: 'tel:+966501234567'
+      value: '+966543268744',
+      href: 'tel:+966543268744'
     },
     {
       icon: MapPin,
@@ -180,13 +180,13 @@ export function ContactPageEN() {
                   <span>Contact via WhatsApp</span>
                 </button>
 
-                <a
+                {/* <a
                   href="mailto:info@haseef.sa"
                   className="block w-full px-6 py-4 bg-white/5 border border-white/10 text-white rounded-xl hover:bg-white/10 hover:border-white/20 transition-all duration-300 flex items-center justify-center gap-3"
                 >
                   <Mail className="w-5 h-5" />
                   <span>Send Email</span>
-                </a>
+                </a> */}
               </div>
 
               {/* Working Hours */}
@@ -209,7 +209,7 @@ export function ContactPageEN() {
       </section>
 
       {/* Map/Location Placeholder */}
-      <section className="relative py-24 px-6 lg:px-12 bg-[#0B1620] overflow-hidden">
+      <section className="hidden">
         <CosmicBackground />
         <Shape3D variant="torus" size="lg" position="top-right" color="mixed" />
         
