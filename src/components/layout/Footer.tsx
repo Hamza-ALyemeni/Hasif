@@ -13,8 +13,8 @@ export function Footer() {
     ],
     company: [
       { name: 'من نحن', href: '/about' },
-      { name: 'أعمالنا', href: '/portfolio' },
-      { name: 'عملاؤنا', href: '/clients' },
+      { name: 'انضم إلى فريقنا', href: '#' },
+      { name: 'كن شريكًا معنا', href: '#' },
       { name: 'المدونة', href: '#' },
       { name: 'الوظائف', href: '#' }
     ],
