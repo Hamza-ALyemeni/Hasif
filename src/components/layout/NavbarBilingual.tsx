@@ -18,7 +18,7 @@ export function NavbarBilingual({ language }: NavbarBilingualProps) {
     ? [
         { name: 'الرئيسية', href: '/ar' },
         { name: 'من نحن', href: '/ar/about' },
-        { name: 'خدماتنا', href: '/ar/services' },
+        { name: 'الخدمات', href: '/ar/services' },
         { name: 'أعمالنا', href: '/ar/portfolio' },
         { name: 'عملاؤنا', href: '/ar/clients' },
         { name: 'تواصل معنا', href: '/ar/contact' },
@@ -32,6 +32,7 @@ export function NavbarBilingual({ language }: NavbarBilingualProps) {
         { name: 'Contact', href: '/en/contact' },
       ];
 
+  const contactPath = isArabic ? '/ar/contact' : '/en/contact';
   const ctaText = isArabic ? 'احجز استشارة مجانية' : 'Book Free Consultation';
 
   const isActive = (path: string) => location.pathname === path;
@@ -51,9 +52,12 @@ export function NavbarBilingual({ language }: NavbarBilingualProps) {
         <div className={`flex items-center justify-between h-20 ${isArabic ? '' : 'flex-row-reverse'}`}>
           {/* CTA Button + Language Switcher - Left/Right side */}
           <div className={`hidden lg:flex items-center gap-4 ${isArabic ? '' : 'flex-row-reverse'}`}>
-            <button className="px-6 py-2.5 bg-[#5DDCD1] text-[#0F1D2A] rounded-lg hover:bg-[#4DCCC1] transition-all duration-300 shadow-lg shadow-[#5DDCD1]/20 whitespace-nowrap">
+            <Link
+              to={contactPath}
+              className="px-6 py-2.5 bg-[#5DDCD1] text-[#0F1D2A] rounded-lg hover:bg-[#4DCCC1] transition-all duration-300 shadow-lg shadow-[#5DDCD1]/20 whitespace-nowrap"
+            >
               {ctaText}
-            </button>
+            </Link>
             <button
               onClick={switchLanguage}
               className="flex items-center gap-2 px-4 py-2.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg transition-all duration-300"
@@ -113,9 +117,13 @@ export function NavbarBilingual({ language }: NavbarBilingualProps) {
                 </Link>
               ))}
               <div className="flex items-center gap-3 mt-4">
-                <button className="flex-1 px-6 py-2.5 bg-[#5DDCD1] text-[#0F1D2A] rounded-lg hover:bg-[#4DCCC1] transition-all duration-300 text-sm">
+                <Link
+                  to={contactPath}
+                  className="flex-1 px-6 py-2.5 bg-[#5DDCD1] text-[#0F1D2A] rounded-lg hover:bg-[#4DCCC1] transition-all duration-300 text-sm text-center"
+                  onClick={() => setIsOpen(false)}
+                >
                   {ctaText}
-                </button>
+                </Link>
                 <button
                   onClick={switchLanguage}
                   className="flex items-center gap-2 px-4 py-2.5 bg-white/5 border border-white/10 rounded-lg"

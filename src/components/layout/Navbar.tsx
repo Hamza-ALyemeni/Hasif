@@ -11,7 +11,7 @@ export function Navbar() {
   const navLinks = [
     { name: 'الرئيسية', href: '/' },
     { name: 'من نحن', href: '/about' },
-    { name: 'خدماتنا', href: '/services' },
+    { name: 'الخدمات', href: '/services' },
     { name: 'أعمالنا', href: '/portfolio' },
     { name: 'عملاؤنا', href: '/clients' },
     { name: 'تواصل معنا', href: '/contact' },
@@ -25,9 +25,12 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* CTA Button + Language Switcher - Left side */}
           <div className="hidden lg:flex items-center gap-4">
-            <button className="px-6 py-2.5 bg-[#5DDCD1] text-[#0F1D2A] rounded-lg hover:bg-[#4DCCC1] transition-all duration-300 shadow-lg shadow-[#5DDCD1]/20">
+            <Link
+              to="/contact"
+              className="px-6 py-2.5 bg-[#5DDCD1] text-[#0F1D2A] rounded-lg hover:bg-[#4DCCC1] transition-all duration-300 shadow-lg shadow-[#5DDCD1]/20"
+            >
               احجز استشارة مجانية
-            </button>
+            </Link>
             <button
               onClick={() => setLanguage(language === 'AR' ? 'EN' : 'AR')}
               className="flex items-center gap-2 px-4 py-2.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg transition-all duration-300"
@@ -56,8 +59,8 @@ export function Navbar() {
 
           {/* Logo - Right side */}
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="حصيف" className="w-10 h-10" />
-            <span className="text-2xl text-white">حصيف</span>
+            <img src={logo} alt="á?áćâ?â?" className="w-10 h-10" />
+            <span className="text-2xl text-white">á?áćâ?â?</span>
           </Link>
 
           {/* Mobile menu button */}
@@ -88,9 +91,13 @@ export function Navbar() {
                 </Link>
               ))}
               <div className="flex items-center gap-3 mt-4">
-                <button className="flex-1 px-6 py-2.5 bg-[#5DDCD1] text-[#0F1D2A] rounded-lg hover:bg-[#4DCCC1] transition-all duration-300">
+                <Link
+                  to="/contact"
+                  className="flex-1 px-6 py-2.5 bg-[#5DDCD1] text-[#0F1D2A] rounded-lg hover:bg-[#4DCCC1] transition-all duration-300 text-center"
+                  onClick={() => setIsOpen(false)}
+                >
                   احجز استشارة مجانية
-                </button>
+                </Link>
                 <button
                   onClick={() => setLanguage(language === 'AR' ? 'EN' : 'AR')}
                   className="flex items-center gap-2 px-4 py-2.5 bg-white/5 border border-white/10 rounded-lg"

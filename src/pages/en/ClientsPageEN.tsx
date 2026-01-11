@@ -66,7 +66,7 @@ export function ClientsPageEN() {
       </section>
 
       {/* Counter Section */}
-      <section className="relative py-24 px-6 lg:px-12 bg-[#0B1620] overflow-hidden">
+      <section className="hidden">
         <CosmicBackground />
         <Shape3D variant="cube" size="md" position="bottom-right" color="purple" />
         

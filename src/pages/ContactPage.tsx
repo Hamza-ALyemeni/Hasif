@@ -26,14 +26,14 @@ export function ContactPage() {
     {
       icon: Mail,
       title: 'البريد الإلكتروني',
-      value: 'info@haseef.sa',
-      href: 'mailto:info@haseef.sa'
+      value: 'info@haseif.co',
+      href: 'mailto:info@haseif.co'
     },
     {
       icon: Phone,
       title: 'الهاتف',
-      value: '+966 50 123 4567',
-      href: 'tel:+966501234567'
+      value: '966543268744+',
+      href: 'tel:+966543268744'
     },
     {
       icon: MapPin,
@@ -165,10 +165,10 @@ export function ContactPage() {
                   <span>تواصل عبر واتساب</span>
                 </button>
 
-                <button className="w-full px-6 py-4 bg-white/5 border border-white/10 text-white rounded-xl hover:bg-white/10 hover:border-white/20 transition-all duration-300 flex items-center justify-center gap-3">
+                {/* <button className="w-full px-6 py-4 bg-white/5 border border-white/10 text-white rounded-xl hover:bg-white/10 hover:border-white/20 transition-all duration-300 flex items-center justify-center gap-3">
                   <Mail className="w-5 h-5" />
                   <span>أرسل بريد إلكتروني</span>
-                </button>
+                </button> */}
               </div>
 
               {/* Working Hours */}
@@ -191,7 +191,7 @@ export function ContactPage() {
       </section>
 
       {/* Map/Location Placeholder */}
-      <section className="py-24 px-6 lg:px-12 bg-[#0A1419]">
+      {/* <section className="hidden">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl mb-4 bg-gradient-to-b from-white to-white/80 bg-clip-text text-transparent">
@@ -211,7 +211,7 @@ export function ContactPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
