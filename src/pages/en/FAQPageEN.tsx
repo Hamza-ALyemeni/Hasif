@@ -1,9 +1,12 @@
-import { HelpCircle, Sparkles, Send } from 'lucide-react';
+import { useState } from 'react';
+import { HelpCircle, Sparkles, Send, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { CosmicBackground } from '../../components/shared/CosmicBackground';
 import { Shape3D } from '../../components/shared/Shape3D';
 
 export function FAQPageEN() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   const faqs = [
     {
       question: 'What services does Haseef provide?',
@@ -63,24 +66,33 @@ export function FAQPageEN() {
         <CosmicBackground />
         <Shape3D variant="cube" size="md" position="bottom-right" color="purple" />
 
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {faqs.map((item, index) => (
-              <div
-                key={index}
-                className="group p-8 bg-gradient-to-br from-[#1A2B3A]/60 to-[#0F1D2A]/60 rounded-2xl border border-white/10 hover:border-[#5DDCD1]/40 transition-all duration-300"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#5DDCD1]/20 to-[#733A93]/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <HelpCircle className="w-6 h-6 text-[#5DDCD1]" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl text-white mb-3 font-semibold">{item.question}</h3>
-                    <p className="text-white/70 leading-relaxed">{item.answer}</p>
-                  </div>
+        <div className="max-w-3xl mx-auto relative z-10">
+          <div className="flex flex-col gap-3">
+            {faqs.map((item, index) => {
+              const isOpen = openIndex === index;
+              return (
+                <div
+                  key={index}
+                  className={`rounded-2xl border transition-all duration-300 ${isOpen ? 'border-[#5DDCD1]/40 bg-gradient-to-br from-[#1A2B3A] to-[#0F1D2A]' : 'border-white/10 bg-gradient-to-br from-[#1A2B3A]/60 to-[#0F1D2A]/60'}`}
+                >
+                  <button
+                    className="w-full flex items-center gap-4 p-6 text-left"
+                    onClick={() => setOpenIndex(isOpen ? null : index)}
+                  >
+                    <div className={`w-10 h-10 rounded-xl bg-gradient-to-br from-[#5DDCD1]/20 to-[#733A93]/20 flex items-center justify-center shrink-0 transition-transform duration-300 ${isOpen ? 'scale-110' : ''}`}>
+                      <HelpCircle className="w-5 h-5 text-[#5DDCD1]" />
+                    </div>
+                    <span className="flex-1 text-white font-semibold text-base">{item.question}</span>
+                    <ChevronDown className={`w-5 h-5 text-[#5DDCD1] shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  {isOpen && (
+                    <div className="px-6 pb-6 pl-20 text-white/70 leading-relaxed">
+                      {item.answer}
+                    </div>
+                  )}
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -101,17 +113,17 @@ export function FAQPageEN() {
                   creative, and media to get you there.
                 </p>
               </div>
-              <div className="flex gap-3 w-full md:w-auto">
+              <div className="flex flex-col md:flex-row gap-3 w-full md:w-auto">
                 <Link
                   to="/en/contact"
-                  className="flex-1 md:flex-none px-6 py-3 bg-[#5DDCD1] text-[#0F1D2A] rounded-lg font-semibold hover:bg-[#4DCCC1] transition-colors duration-300 flex items-center justify-center gap-2"
+                  className="flex-1 md:flex-none px-5 py-3 bg-[#5DDCD1] text-[#0F1D2A] rounded-lg font-semibold hover:bg-[#4DCCC1] transition-colors duration-300 flex items-center justify-center gap-2 whitespace-nowrap text-sm"
                 >
-                  <Send className="w-4 h-4" />
+                  <Send className="w-4 h-4 shrink-0" />
                   Contact Us
                 </Link>
                 <Link
                   to="/en/services"
-                  className="flex-1 md:flex-none px-6 py-3 bg-white/5 text-white rounded-lg font-semibold hover:bg-white/10 border border-white/10 transition-colors duration-300"
+                  className="flex-1 md:flex-none px-5 py-3 bg-white/5 text-white rounded-lg font-semibold hover:bg-white/10 border border-white/10 transition-colors duration-300 whitespace-nowrap text-sm text-center"
                 >
                   Explore Services
                 </Link>

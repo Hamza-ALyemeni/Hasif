@@ -154,9 +154,9 @@ export function PrivacyPolicyAR() {
               </div>
               <Link
                 to="/ar/contact"
-                className="px-6 py-3 bg-[#5DDCD1] text-[#0F1D2A] rounded-lg font-semibold hover:bg-[#4DCCC1] transition-colors duration-300 flex items-center gap-2"
+                className="px-5 py-3 bg-[#5DDCD1] text-[#0F1D2A] rounded-lg font-semibold hover:bg-[#4DCCC1] transition-colors duration-300 flex items-center gap-2 whitespace-nowrap text-sm shrink-0"
               >
-                <Send className="w-4 h-4" />
+                <Send className="w-4 h-4 shrink-0" />
                 تواصل معنا
               </Link>
             </div>

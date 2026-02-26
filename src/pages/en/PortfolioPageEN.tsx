@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowUpLeft } from 'lucide-react';
 import { CosmicBackground } from '../../components/shared/CosmicBackground';
 import { Shape3D } from '../../components/shared/Shape3D';
@@ -93,6 +94,26 @@ export function PortfolioPageEN() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-24 px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="relative rounded-3xl overflow-hidden p-12 lg:p-20 text-center bg-gradient-to-br from-[#1A2B3A] to-[#0F1D2A] border border-white/10">
+            <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#5DDCD1]/10 rounded-full blur-[120px]"></div>
+            <div className="relative z-10">
+              <h2 className="text-4xl md:text-6xl mb-6 bg-gradient-to-b from-white to-white/80 bg-clip-text text-transparent leading-tight">
+                Ready to Get Started?
+              </h2>
+              <p className="text-lg md:text-xl text-white/60 mb-12 max-w-3xl mx-auto leading-relaxed">
+                Let's build a project worthy of being added to this list.
+              </p>
+              <Link to="/en/contact" className="inline-block px-8 py-5 bg-[#5DDCD1] text-[#0F1D2A] rounded-xl hover:bg-[#4DCCC1] transition-all duration-300 shadow-2xl shadow-[#5DDCD1]/30 hover:shadow-[#5DDCD1]/50 hover:scale-105 text-lg font-semibold">
+                Book Free Consultation
+              </Link>
+            </div>
           </div>
         </div>
       </section>
