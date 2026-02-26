@@ -8,32 +8,32 @@ export function HomePageAR() {
     {
       icon: Megaphone,
       title: 'إدارة حسابات التواصل الاجتماعي',
-      description: 'إدارة يومية، ردود، بناء تقويم محتوى، تحسين الهوية على المنصات، وتحليل الأداء شهرياً'
+      description: 'إدارة احترافية للحسابات، تخطيط محتوى، تحسين الهوية، وتحليل أداء دوري.'
     },
     {
       icon: Palette,
       title: 'كتابة المحتوى الإبداعي',
-      description: 'محتوى سوشيال، تغريدات قوية، سكربتات فيديو، نصوص إعلانية، بروفايلات الشركات ومواقع إلكترونية'
+      description: 'صياغة محتوى يعكس هويتك ويقنع جمهورك — من السوشيال إلى الإعلانات والمواقع.'
     },
     {
       icon: Lightbulb,
       title: 'الهوية البصرية',
-      description: 'شعارات، كتيب هوية، ألوان وخطوط، تطبيقات الهوية، وبناء علامة تجارية كاملة'
+      description: 'بناء علامة متكاملة تبدأ من الشعار وتنتهي بتجربة بصرية متناسقة.'
     },
     {
       icon: BarChart3,
-      title: 'الحملات الإعلانية',
-      description: 'إعلانات Meta و Google، إدارة الميزانيات، تحسين النتائج، استهداف دقيق وتقارير أداء واضحة'
+      title: 'التسويق الرقمي',
+      description: 'إدارة إعلانات مدفوعة مبنية على بيانات، استهداف دقيق، وتحسين مستمر للأداء.'
     },
     {
       icon: Video,
-      title: 'الموشن جرافيك',
-      description: 'فيديوهات تعريفية، فيديوهات إعلانية، فيديوهات للخدمات، مونتاج، تترات وإعلانات'
+      title: 'موشن جرافيك',
+      description: 'إنتاج فيديوهات احترافية توصل رسالتك بوضوح وتأثير.'
     },
     {
       icon: Camera,
-      title: 'التصوير',
-      description: 'تصوير منتجات، تصوير أشخاص، تصوير للشركات، UGC، وتصوير جوي (درون)'
+      title: 'التصوير الفوتوغرافي',
+      description: 'تصوير احترافي للمنتجات والعلامات التجارية يعكس الجودة والقيمة.'
     }
   ];
 
@@ -41,22 +41,22 @@ export function HomePageAR() {
     {
       number: '01',
       title: 'فهم المشروع والجمهور',
-      description: 'نبدأ بفهم عميق لمشروعك وجمهورك المستهدف لنضع الأساس الصحيح'
+      description: 'نبدأ بتحليل عميق لمشروعك وسوقك لتحديد الاتجاه الصحيح.'
     },
     {
       number: '02',
       title: 'بناء استراتيجية واضحة',
-      description: 'نصمم خطة محسوبة وذكية تحقق أهدافك بوضوح وبدون تعقيد'
+      description: 'نضع خطة مبنية على أهداف واقعية ومؤشرات أداء محددة.'
     },
     {
       number: '03',
-      title: 'إنتاج المحتوى بأعلى جودة',
-      description: 'نبدع محتوى احترافي يعكس هويتك ويحقق التأثير المطلوب'
+      title: 'إنتاج محتوى عالي الجودة',
+      description: 'ننفذ بخبرة واحترافية مع اهتمام دقيق بالتفاصيل.'
     },
     {
       number: '04',
-      title: 'الإطلاق والمتابعة والتحسين',
-      description: 'نطلق الحملات ونتابع الأداء باستمرار لتحسين النتائج'
+      title: 'الإطلاق، المتابعة، والتحسين',
+      description: 'نقيس النتائج ونطوّر الأداء باستمرار لضمان نمو مستدام.'
     }
   ];
 
@@ -64,22 +64,22 @@ export function HomePageAR() {
     {
       icon: Target,
       title: 'الشفافية',
-      description: 'نتحدث بوضوح ونقدم تقارير دقيقة لكل ما نفعله'
+      description: 'وضوح في التواصل وتقارير دقيقة في الأداء.'
     },
     {
       icon: Award,
       title: 'الجودة',
-      description: 'نهتم بكل تفصيلة صغيرة لنقدم عملاً يليق بعلامتك'
+      description: 'اهتمام بالتفاصيل لأن التفاصيل تصنع الفارق.'
     },
     {
       icon: CheckCircle2,
       title: 'الالتزام',
-      description: 'نفي بوعودنا ونلتزم بالمواعيد والمعايير المتفق عليها'
+      description: 'احترام الوقت والمعايير المتفق عليها.'
     },
     {
       icon: Lightbulb,
       title: 'الإبداع',
-      description: 'نفكر خارج الصندوق لنقدم حلولاً مبتكرة تميزك عن المنافسين'
+      description: 'حلول غير تقليدية مدعومة بفهم وتحليل.'
     }
   ];
 
@@ -124,7 +124,7 @@ export function HomePageAR() {
 
           {/* Subheadline */}
           <p className="text-lg md:text-2xl text-white/70 mb-12 max-w-4xl mx-auto leading-relaxed">
-            وكالة سعودية حديثة تمزج بين الإبداع، الحكمة، والوضوح لتقدم حلولاً تسويقية فعّالة وموزونة
+            وكالة سعودية تعمل بعقلية استراتيجية، تمزج بين الإبداع والتحليل لصناعة قرارات تسويقية تحقق نتائج حقيقية.
           </p>
 
           {/* CTA Buttons */}
@@ -133,14 +133,14 @@ export function HomePageAR() {
               to="/ar/contact"
               className="group px-8 py-4 bg-[#5DDCD1] text-[#0F1D2A] rounded-xl hover:bg-[#4DCCC1] transition-all duration-300 shadow-2xl shadow-[#5DDCD1]/30 hover:shadow-[#5DDCD1]/50 hover:scale-105 flex items-center gap-2 font-semibold"
             >
-              <span>ابدأ مشروعك الآن</span>
+              <span>ابدأ مشروعك</span>
               <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
             </Link>
             <Link
               to="/ar/portfolio"
               className="px-8 py-4 bg-transparent text-white border border-white/20 rounded-xl hover:bg-white/5 hover:border-white/40 transition-all duration-300"
             >
-              استكشف أعمالنا
+              اكتشف أعمالنا
             </Link>
           </div>
 
@@ -149,21 +149,21 @@ export function HomePageAR() {
             <div className="relative">
               <div className="absolute inset-0 bg-[#5DDCD1]/5 blur-2xl rounded-full"></div>
               <div className="relative">
-                <div className="text-4xl md:text-5xl text-[#5DDCD1] mb-2 font-bold">+300</div>
-                <div className="text-sm text-white/60">مشروع ناجح</div>
+                <div className="text-4xl md:text-5xl text-[#5DDCD1] mb-2 font-bold">+20</div>
+                <div className="text-sm text-white/60">مشروع منجز</div>
               </div>
             </div>
             <div className="relative">
               <div className="absolute inset-0 bg-[#733A93]/5 blur-2xl rounded-full"></div>
               <div className="relative">
-                <div className="text-4xl md:text-5xl text-[#5DDCD1] mb-2 font-bold">+150</div>
-                <div className="text-sm text-white/60">عميل سعيد</div>
+                <div className="text-4xl md:text-5xl text-[#5DDCD1] mb-2 font-bold">+8</div>
+                <div className="text-sm text-white/60">عميل خدمناهم</div>
               </div>
             </div>
             <div className="relative">
               <div className="absolute inset-0 bg-[#5DDCD1]/5 blur-2xl rounded-full"></div>
               <div className="relative">
-                <div className="text-4xl md:text-5xl text-[#5DDCD1] mb-2 font-bold">7+</div>
+                <div className="text-4xl md:text-5xl text-[#5DDCD1] mb-2 font-bold">3+</div>
                 <div className="text-sm text-white/60">سنوات خبرة</div>
               </div>
             </div>
@@ -182,14 +182,12 @@ export function HomePageAR() {
           <div className="relative mb-8">
             <div className="absolute inset-0 bg-gradient-to-r from-[#5DDCD1]/20 to-[#733A93]/20 blur-2xl"></div>
             <h2 className="relative text-3xl md:text-5xl mb-8 text-white leading-relaxed">
-              <span className="text-[#5DDCD1] font-bold">حصيف</span> تأسست لإغلاق الفجوة بين
-              <br />
-              <span className="text-white/90">الإبداع الفني والجدوى التجارية الفعلية</span>
+              <span className="text-[#5DDCD1] font-bold">عن حصيف</span>
             </h2>
           </div>
-          
+
           <p className="text-lg text-white/70 leading-relaxed max-w-3xl mx-auto mb-12">
-            نحن وكالة سعودية حديثة تمزج بين الإبداع، الحكمة، والوضوح. نقدم حلولاً محسوبة وذكية تركز على النتائج الحقيقية وليس الضجيج. نعمل بأسلوب هادئ، حكيم، وتقني، نحب التفاصيل، ونتحدث بأقل كلام وبأعلى قيمة.
+            تأسست حصيف لسد الفجوة بين الإبداع الفني والجدوى التجارية الفعلية. نؤمن أن التسويق ليس ضجيجًا ولا وعودًا كبيرة، بل قرارات مدروسة مبنية على فهم وتحليل. نبدأ بالوضوح، نعمل بدقة، ونقيس النتائج باستمرار. نصنع حلولاً تناسب مشروعك وسوقك، لا قوالب جاهزة للجميع.
           </p>
           
           <Link
@@ -214,7 +212,7 @@ export function HomePageAR() {
                 خدماتنا
               </h2>
             </div>
-            <p className="text-lg text-white/60">حلول تسويقية متكاملة بأعلى جودة</p>
+            <p className="text-lg text-white/60">خدمات مصممة لدعم نموك الرقمي.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -241,7 +239,7 @@ export function HomePageAR() {
               to="/ar/services"
               className="inline-block px-8 py-4 bg-transparent text-white border border-white/20 rounded-xl hover:bg-white/5 hover:border-[#5DDCD1]/40 transition-all duration-300"
             >
-              عرض جميع الخدمات
+              عرض كل الخدمات
             </Link>
           </div>
         </div>
@@ -260,7 +258,7 @@ export function HomePageAR() {
                 طريقة عملنا
               </h2>
             </div>
-            <p className="text-lg text-white/60">عملية محسوبة ومدروسة لتحقيق النجاح</p>
+            <p className="text-lg text-white/60">عملية مدروسة ومحسوبة لتحقيق النجاح.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -291,7 +289,7 @@ export function HomePageAR() {
                 قيمنا
               </h2>
             </div>
-            <p className="text-lg text-white/60">المبادئ التي تقودنا في كل عمل نقوم به</p>
+            <p className="text-lg text-white/60">المبادئ التي تحكم كل قرار نتخذه.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -320,14 +318,14 @@ export function HomePageAR() {
           <div className="relative mb-8">
             <div className="absolute inset-0 bg-gradient-to-r from-[#5DDCD1]/30 via-[#733A93]/30 to-[#5DDCD1]/30 blur-3xl"></div>
             <h2 className="relative text-4xl md:text-7xl bg-gradient-to-b from-white to-white/80 bg-clip-text text-transparent leading-tight">
-              جاهز لصناعة قصة نجاحك؟
+              هل أنت جاهز للبدء بطريقة صحيحة؟
             </h2>
           </div>
-          
+
           <p className="text-lg md:text-xl text-white/60 mb-12 max-w-3xl mx-auto leading-relaxed">
-            دعنا نبدأ رحلة النجاح الرقمي معاً بأسلوب محسوب وواضح يحقق نتائج حقيقية
+            دعنا نبني لك قرارًا تسويقيًا محسوبًا يحقق نتائج واضحة ومستدامة.
           </p>
-          
+
           <Link
             to="/ar/contact"
             className="inline-block px-10 py-5 bg-[#5DDCD1] text-[#0F1D2A] rounded-xl hover:bg-[#4DCCC1] transition-all duration-300 shadow-2xl shadow-[#5DDCD1]/40 hover:shadow-[#5DDCD1]/60 hover:scale-105 text-lg font-semibold"

@@ -5,7 +5,7 @@ import { ArrowUpLeft } from 'lucide-react';
 export function PortfolioPage() {
   const [activeFilter, setActiveFilter] = useState('الكل');
 
-  const filters = ['الكل', 'مواقع إلكترونية', 'هويات بصرية', 'حملات تسويقية', 'تطبيقات موبايل', 'محتوى مرئي'];
+  const filters = ['الكل', 'مواقع إلكترونية', 'هويات بصرية', 'حملات تسويقية', 'متاجر إلكترونية', 'محتوى مرئي'];
 
   const projects = Array.from({ length: 12 }, (_, i) => ({
     id: i + 1,
@@ -22,8 +22,8 @@ export function PortfolioPage() {
     <div className="min-h-screen">
       <PageHero
         badge="أعمالنا"
-        title="مشاريع نفخر بإنجازها"
-        subtitle="استكشف مجموعة من أعمالنا المميزة التي حققت نتائج استثنائية لعملائنا"
+        title="نماذج من مشاريع نفخر بتنفيذها"
+        subtitle="نستعرض هنا مجموعة من الأعمال التي عملنا عليها — كل مشروع بُني على استراتيجية واضحة وتنفيذ دقيق ونتائج قابلة للقياس."
       />
 
       {/* Filters */}

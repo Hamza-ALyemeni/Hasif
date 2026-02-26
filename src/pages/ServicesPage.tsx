@@ -53,23 +53,23 @@ export function ServicesPage() {
   const process = [
     {
       number: '01',
-      title: 'الاستكشاف والتحليل',
-      description: 'نبدأ بفهم عميق لعلامتك التجارية وأهدافك وجمهورك المستهدف'
+      title: 'الاكتشاف والتحليل',
+      description: 'فهم عميق لعلامتك، أهدافك، وسوقك لتحديد الاتجاه الصحيح.'
     },
     {
       number: '02',
       title: 'التخطيط الاستراتيجي',
-      description: 'نضع استراتيجية تسويقية شاملة مبنية على البيانات والتحليل'
+      description: 'بناء خطة واضحة تستند إلى بيانات ومؤشرات أداء محددة.'
     },
     {
       number: '03',
       title: 'التنفيذ الإبداعي',
-      description: 'نحول الاستراتيجية إلى واقع من خلال محتوى إبداعي وحملات فعالة'
+      description: 'تحويل الاستراتيجية إلى محتوى وحملات مدروسة بعناية.'
     },
     {
       number: '04',
       title: 'القياس والتطوير',
-      description: 'نقيس النتائج باستمرار ونطور الحملات لتحقيق أفضل أداء ممكن'
+      description: 'تحليل النتائج وتحسين الأداء باستمرار لضمان نمو مستدام.'
     }
   ];
 
@@ -77,8 +77,8 @@ export function ServicesPage() {
     <div className="min-h-screen">
       <PageHero
         badge="خدماتنا"
-        title="حلول تسويقية متكاملة"
-        subtitle="نقدم مجموعة شاملة من الخدمات التسويقية الرقمية لتحقيق أهدافك"
+        title="حلول تسويقية محسوبة تدعم نموك وتحقق أهدافك"
+        subtitle="نقدم خدمات تشغيلية واستراتيجية تغطي جميع مراحل بناء العلامة التجارية وإدارة حضورها الرقمي — من الفكرة إلى التنفيذ."
       />
 
       {/* Services Grid */}
@@ -116,10 +116,10 @@ export function ServicesPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl mb-4 bg-gradient-to-b from-white to-white/80 bg-clip-text text-transparent">
-              طريقة عملنا
+              آلية العمل
             </h2>
             <p className="text-lg text-white/60">
-              نتبع منهجية علمية لضمان تحقيق أفضل النتائج
+              نعتمد عملية واضحة ومبنية على التحليل لضمان نتائج قابلة للقياس.
             </p>
           </div>
 
@@ -167,7 +167,7 @@ export function ServicesPage() {
             </h2>
 
             <p className="text-lg md:text-xl text-white/60 mb-12 max-w-3xl mx-auto leading-relaxed">
-              دعنا نساعدك في تحقيق أهدافك التسويقية وبناء حضور رقمي قوي لعلامتك التجارية
+              دعنا نبني لك استراتيجية تسويقية محسوبة تعزز حضورك الرقمي وتدعم نمو أعمالك.
             </p>
 
             <button className="px-8 py-5 bg-[#5DDCD1] text-[#0F1D2A] rounded-xl hover:bg-[#4DCCC1] transition-all duration-300 shadow-2xl shadow-[#5DDCD1]/30 hover:shadow-[#5DDCD1]/50 hover:scale-105">

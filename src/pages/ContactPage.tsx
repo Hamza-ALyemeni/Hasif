@@ -26,13 +26,13 @@ export function ContactPage() {
     {
       icon: Mail,
       title: 'البريد الإلكتروني',
-      value: 'info@haseif.co',
-      href: 'mailto:info@haseif.co'
+      value: 'info@haseif.com',
+      href: 'mailto:info@haseif.com'
     },
     {
       icon: Phone,
       title: 'الهاتف',
-      value: '966543268744+',
+      value: '+966 54 326 8744',
       href: 'tel:+966543268744'
     },
     {
@@ -47,8 +47,8 @@ export function ContactPage() {
     <div className="min-h-screen">
       <PageHero
         badge="تواصل معنا"
-        title="لنبدأ رحلة النجاح معاً"
-        subtitle="نحن هنا للإجابة على استفساراتك ومساعدتك في تحقيق أهدافك الرقمية"
+        title="لنبدأ مشروعك بأسلوب محسوب وواضح"
+        subtitle="نحن هنا للإجابة على استفساراتك، وفهم احتياجك، وبناء حل تسويقي يناسب أهدافك."
       />
 
       {/* Contact Form and Info */}
@@ -62,7 +62,7 @@ export function ContactPage() {
               
               <div className="relative z-10 p-8 lg:p-12 bg-gradient-to-br from-[#1A2B3A] to-[#0F1D2A] rounded-2xl border border-white/10">
                 <h3 className="text-3xl mb-2 text-white">أرسل لنا رسالة</h3>
-                <p className="text-white/60 mb-8">سنرد عليك في أقرب وقت ممكن</p>
+                <p className="text-white/60 mb-8">املأ النموذج التالي وسنعود إليك في أقرب وقت ممكن.</p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Name Input */}
