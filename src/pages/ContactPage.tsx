@@ -56,8 +56,7 @@ export function ContactPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="relative">
-              {/* Background Glow */}
+            {/* <div className="relative">
               <div className="absolute -top-20 -right-20 w-64 h-64 bg-[#5DDCD1]/10 rounded-full blur-[100px]"></div>
               
               <div className="relative z-10 p-8 lg:p-12 bg-gradient-to-br from-[#1A2B3A] to-[#0F1D2A] rounded-2xl border border-white/10">
@@ -65,7 +64,6 @@ export function ContactPage() {
                 <p className="text-white/60 mb-8">املأ النموذج التالي وسنعود إليك في أقرب وقت ممكن.</p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  {/* Name Input */}
                   <div>
                     <label htmlFor="name" className="block text-white mb-2">
                       الاسم الكامل
@@ -82,7 +80,6 @@ export function ContactPage() {
                     />
                   </div>
 
-                  {/* Email Input */}
                   <div>
                     <label htmlFor="email" className="block text-white mb-2">
                       البريد الإلكتروني
@@ -100,7 +97,6 @@ export function ContactPage() {
                     />
                   </div>
 
-                  {/* Message Input */}
                   <div>
                     <label htmlFor="message" className="block text-white mb-2">
                       رسالتك
@@ -117,7 +113,6 @@ export function ContactPage() {
                     />
                   </div>
 
-                  {/* Submit Button */}
                   <button
                     type="submit"
                     className="w-full px-6 py-4 bg-[#5DDCD1] text-[#0F1D2A] rounded-lg hover:bg-[#4DCCC1] transition-all duration-300 shadow-lg shadow-[#5DDCD1]/20 hover:shadow-[#5DDCD1]/40 flex items-center justify-center gap-2"
@@ -127,7 +122,7 @@ export function ContactPage() {
                   </button>
                 </form>
               </div>
-            </div>
+            </div> */}
 
             {/* Contact Information */}
             <div className="space-y-8">

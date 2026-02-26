@@ -72,8 +72,7 @@ export function ContactPageEN() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="relative">
-              {/* Background Glow */}
+            {/* <div className="relative">
               <div className="absolute -top-20 -left-20 w-64 h-64 bg-[#5DDCD1]/10 rounded-full blur-[100px]"></div>
               
               <div className="relative z-10 p-8 lg:p-12 bg-gradient-to-br from-[#1A2B3A] to-[#0F1D2A] rounded-2xl border border-white/10">
@@ -81,7 +80,6 @@ export function ContactPageEN() {
                 <p className="text-white/60 mb-8">We'll get back to you as soon as possible</p>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  {/* Name Input */}
                   <div>
                     <label htmlFor="name" className="block text-white mb-2">
                       Full Name
@@ -98,7 +96,6 @@ export function ContactPageEN() {
                     />
                   </div>
 
-                  {/* Email Input */}
                   <div>
                     <label htmlFor="email" className="block text-white mb-2">
                       Email Address
@@ -115,7 +112,6 @@ export function ContactPageEN() {
                     />
                   </div>
 
-                  {/* Message Input */}
                   <div>
                     <label htmlFor="message" className="block text-white mb-2">
                       Your Message
@@ -132,7 +128,6 @@ export function ContactPageEN() {
                     />
                   </div>
 
-                  {/* Submit Button */}
                   <button
                     type="submit"
                     className="w-full px-6 py-4 bg-[#5DDCD1] text-[#0F1D2A] rounded-lg hover:bg-[#4DCCC1] transition-all duration-300 shadow-lg shadow-[#5DDCD1]/20 hover:shadow-[#5DDCD1]/40 flex items-center justify-center gap-2 font-semibold"
@@ -142,7 +137,7 @@ export function ContactPageEN() {
                   </button>
                 </form>
               </div>
-            </div>
+            </div> */}
 
             {/* Contact Information */}
             <div className="space-y-8">
