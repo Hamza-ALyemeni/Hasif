@@ -72,7 +72,7 @@ export function ContactPageEN() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            {/* <div className="relative">
+            <div className="relative hidden">
               <div className="absolute -top-20 -left-20 w-64 h-64 bg-[#5DDCD1]/10 rounded-full blur-[100px]"></div>
               
               <div className="relative z-10 p-8 lg:p-12 bg-gradient-to-br from-[#1A2B3A] to-[#0F1D2A] rounded-2xl border border-white/10">
@@ -137,7 +137,7 @@ export function ContactPageEN() {
                   </button>
                 </form>
               </div>
-            </div> */}
+            </div>
 
             {/* Contact Information */}
             <div className="space-y-8">
