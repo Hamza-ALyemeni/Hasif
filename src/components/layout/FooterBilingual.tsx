@@ -1,4 +1,4 @@
-import { FaInstagram, FaTiktok, FaTwitter, FaSnapchat, FaPinterest } from 'react-icons/fa';
+import { FaInstagram, FaTiktok, FaTwitter, FaSnapchat } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import logo from "../../assets/logo.png";
 interface FooterBilingualProps {
@@ -68,10 +68,9 @@ export function FooterBilingual({ language }: FooterBilingualProps) {
     { icon: FaTiktok, href: 'https://www.tiktok.com/@haseif.sa', label: 'TikTok' },
     { icon: FaTwitter, href: 'https://x.com/Haseif_sa', label: 'X' },
     { icon: FaSnapchat, href: 'https://www.snapchat.com/@haseif.sa', label: 'Snapchat' },
-    { icon: FaPinterest, href: 'https://www.pinterest.com/0pewcpjz7wgihhy3ckx1m0zysvo2lq/', label: 'Pinterest' },
   ];
 
-  const whatsappLink = 'https://wa.me/1234567890';
+  const whatsappLink = 'https://wa.me/966543268744';
 
   return (
     <>

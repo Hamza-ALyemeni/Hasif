@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { PageHero } from '../components/shared/PageHero';
 import { Megaphone, Palette, BarChart3, Share2, Video, Smartphone, Search, MousePointerClick, TrendingUp } from 'lucide-react';
 
@@ -170,9 +171,9 @@ export function ServicesPage() {
               دعنا نبني لك استراتيجية تسويقية محسوبة تعزز حضورك الرقمي وتدعم نمو أعمالك.
             </p>
 
-            <button className="px-8 py-5 bg-[#5DDCD1] text-[#0F1D2A] rounded-xl hover:bg-[#4DCCC1] transition-all duration-300 shadow-2xl shadow-[#5DDCD1]/30 hover:shadow-[#5DDCD1]/50 hover:scale-105">
+            <Link to="/contact" className="px-8 py-5 bg-[#5DDCD1] text-[#0F1D2A] rounded-xl hover:bg-[#4DCCC1] transition-all duration-300 shadow-2xl shadow-[#5DDCD1]/30 hover:shadow-[#5DDCD1]/50 hover:scale-105 inline-block">
               <span className="text-lg">احجز استشارة مجانية</span>
-            </button>
+            </Link>
           </div>
         </div>
       </section>

@@ -160,10 +160,10 @@ export function ContactPage() {
               <div className="space-y-4">
                 <h4 className="text-xl text-white mb-4">تواصل سريع</h4>
                 
-                <button className="w-full px-6 py-4 bg-gradient-to-l from-[#25D366]/20 to-[#25D366]/10 border border-[#25D366]/30 text-white rounded-xl hover:from-[#25D366]/30 hover:to-[#25D366]/20 transition-all duration-300 flex items-center justify-center gap-3">
+                <a href="https://wa.me/966543268744" target="_blank" rel="noreferrer" className="w-full px-6 py-4 bg-gradient-to-l from-[#25D366]/20 to-[#25D366]/10 border border-[#25D366]/30 text-white rounded-xl hover:from-[#25D366]/30 hover:to-[#25D366]/20 transition-all duration-300 flex items-center justify-center gap-3">
                   <MessageCircle className="w-5 h-5" />
                   <span>تواصل عبر واتساب</span>
-                </button>
+                </a>
 
                 {/* <button className="w-full px-6 py-4 bg-white/5 border border-white/10 text-white rounded-xl hover:bg-white/10 hover:border-white/20 transition-all duration-300 flex items-center justify-center gap-3">
                   <Mail className="w-5 h-5" />
@@ -172,7 +172,7 @@ export function ContactPage() {
               </div>
 
               {/* Working Hours */}
-              <div className="p-6 bg-gradient-to-br from-[#1A2B3A]/50 to-[#0F1D2A]/50 rounded-xl border border-white/10">
+              {/* <div className="p-6 bg-gradient-to-br from-[#1A2B3A]/50 to-[#0F1D2A]/50 rounded-xl border border-white/10">
                 <h4 className="text-xl text-white mb-4">ساعات العمل</h4>
                 <div className="space-y-2 text-white/70">
                   <div className="flex justify-between">
@@ -184,7 +184,7 @@ export function ContactPage() {
                     <span>مغلق</span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
